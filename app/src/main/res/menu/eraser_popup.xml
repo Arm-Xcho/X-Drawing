@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/last_size"
+        android:title="@string/last_size" />
+    <item
+        android:id="@+id/size1"
+        android:title="@string/size_1" />
+    <item
+        android:id="@+id/size2"
+        android:title="@string/size_2" />
+    <item
+        android:id="@+id/size3"
+        android:title="@string/size_3" />
+    <item
+        android:id="@+id/size4"
+        android:title="@string/size_4" />
+    <item
+        android:id="@+id/size5"
+        android:title="@string/size_5" />
+    <item
+        android:id="@+id/size6"
+        android:title="@string/size_6" />
+    <item
+        android:id="@+id/size7"
+        android:title="@string/size_7" />
+</menu>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_drawing_yourself"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.xcho.x_drawing.DrawingYourself">
+
+    <TextView
+        android:id="@+id/chooseText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/choose_picture"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_below="@+id/chooseText"
+        android:background="@color/backgroundColor">
+
+        <ImageView
+            android:id="@+id/drawing1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing1" />
+
+        <ImageView
+            android:id="@+id/drawing2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|top"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing2" />
+
+        <ImageView
+            android:id="@+id/drawing3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right|top"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing3" />
+
+        <ImageView
+            android:id="@+id/drawing4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|left"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing4" />
+
+        <ImageView
+            android:id="@+id/drawing5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing5" />
+
+        <ImageView
+            android:id="@+id/drawing6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|right"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing6" />
+
+        <ImageView
+            android:id="@+id/drawing7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|left"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing7" />
+
+        <ImageView
+            android:id="@+id/drawing8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing8" />
+
+        <ImageView
+            android:id="@+id/drawing9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/customborder"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawing9" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/you_can_add_any_picture"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/addNewImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/addText"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/addimages" />
+
+</RelativeLayout>

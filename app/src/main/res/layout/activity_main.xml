@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.example.xcho.x_drawing.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/customborder"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/undo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="20"
+            android:background="@null"
+            android:contentDescription="@string/undo"
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/undo" />
+
+        <ImageButton
+            android:id="@+id/eraser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="20"
+            android:background="@null"
+            android:contentDescription="@string/eraser"
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/eraser" />
+
+        <ImageButton
+            android:id="@+id/brush"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="20"
+            android:background="@null"
+            android:contentDescription="@string/brush"
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/paintbrush" />
+
+        <ImageButton
+            android:id="@+id/color"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="20"
+            android:background="@null"
+            android:contentDescription="@string/color"
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/rgb" />
+
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="20"
+            android:background="@null"
+            android:contentDescription="@string/more"
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <com.example.xcho.x_drawing.DrawingView
+        android:id="@+id/drawingCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
